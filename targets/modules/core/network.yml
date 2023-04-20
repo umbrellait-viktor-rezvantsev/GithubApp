@@ -1,0 +1,8 @@
+name: NetworkFramework
+targets:
+  NetworkFramework:
+    templates: ['FrameworkTarget']
+    sources:
+     - path: 'GithubApp/Core'
+    dependencies:
+      - target: Models

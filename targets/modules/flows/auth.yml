@@ -1,0 +1,11 @@
+name: Authentication
+targets:
+  Authentication:
+    templates: ['AppTarget']
+    dependencies:
+      - target: NetworkFramework
+    sources:
+      - path: '../GithubApp/GithubApp/Sources/Auth'
+      
+    # settings:
+    #   INFOPLIST_FILE: "$(SRCROOT)/app/Main/Supporting Files/Info.plist"

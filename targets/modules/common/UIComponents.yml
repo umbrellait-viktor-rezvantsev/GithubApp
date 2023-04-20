@@ -1,0 +1,5 @@
+targets:
+  UIComponents:
+    templates: ['FrameworkTarget']
+    sources:
+      - path: 'GithubApp/Common'
