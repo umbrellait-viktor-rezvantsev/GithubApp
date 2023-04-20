@@ -3,6 +3,6 @@ targets:
   NetworkFramework:
     templates: ['FrameworkTarget']
     sources:
-     - path: 'GithubApp/Core'
+     - path: 'GithubApp/Core/Network'
     dependencies:
       - target: Models

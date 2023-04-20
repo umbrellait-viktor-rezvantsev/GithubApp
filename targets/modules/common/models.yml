@@ -3,4 +3,4 @@ targets:
   Models:
     templates: ['FrameworkTarget']
     sources:
-      - path: '../GithubApp/GithubApp/Common'
+      - path: '../GithubApp/GithubApp/Common/Models'
