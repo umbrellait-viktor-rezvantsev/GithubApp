@@ -11,7 +11,7 @@ fileGroups:
 # - '../../Configs/Products'
 # - '../../Configs/XcodeGen'
 options:
-  createIntermediateGroups: true
+  createIntermediateGroups: false
   developmentLanguage: 'ru'
   useBaseInternationalization: false
   usesTabs: false
@@ -23,25 +23,20 @@ options:
 settings:
   CURRENT_PROJECT_VERSION: '${XCODEGEN_BUILD_NUMBER}'
 include:
-# - common.yml
 - path: ../GithubApp/targets/common.yml
   relativePaths: false
-# - models.yml
 - path: ../GithubApp/targets/modules/common/models.yml
   relativePaths: false
-# - UIComponents.yml
 - path: ../GithubApp/targets/modules/common/UIComponents.yml
   relativePaths: false
-# - network.yml
 - path: ../GithubApp/targets/modules/core/network.yml
   relativePaths: false
-# - auth.yml
 - path: ../GithubApp/targets/modules/flows/auth.yml
   relativePaths: false
 
-targets:
-  GithubApp:
-    templates: [AppTarget]
-    dependencies:
-      - target: Authentication
+# targets:
+#   GithubApp:
+#     templates: [AppTarget]
+#     dependencies:
+#       - target: Authentication
   

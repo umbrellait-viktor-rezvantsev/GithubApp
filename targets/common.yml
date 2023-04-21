@@ -15,25 +15,41 @@ targetTemplates:
     #   - excludes:
     #     - '*'
     settings:
-      - base:
-          PRODUCT_DISPLAY_NAME: '${XCODEGEN_DISPLAYNAME}/$(TARGET_NAME)'
-          SWIFT_SUPPRESS_WARNINGS: '${XCODEGEN_SILENCE_WARNINGS}'
-          CODE_SIGN_STYLE: 'Automatic'
-          IPHONEOS_DEPLOYMENT_TARGET: '14.0'
-          SWIFT_VERSION: '${XCODEGEN_SWIFT_VERSION}'
-          MARKETING_VERSION: '0.0.1'
-          INFOPLIST_FILE: 'Configs/Products/Common/Info.plist'
-      - configs:
-          Debug:
-            ONLY_ACTIVE_ARCH: 'YES'
-            DEBUG_INFORMATION_FORMAT: 'dwarf'
-            ENABLE_BITCODE: 'NO'
-            OTHER_SWIFT_FLAGS: '$(inherited) -DDebug -D${XCODEGEN_PRODUCT_FLAG} -D${XCODEGEN_DISTRIBUTION_FLAG}'
-          Release:
-            ONLY_ACTIVE_ARCH: 'NO'
-            DEBUG_INFORMATION_FORMAT: 'dwarf-with-dsym'
-            ENABLE_BITCODE: '${XCODE_ENABLE_BITCODE}'
-            OTHER_SWIFT_FLAGS: '$(inherited) -DRelease -D${XCODEGEN_PRODUCT_FLAG} -D${XCODEGEN_DISTRIBUTION_FLAG}'
+      base:
+        PRODUCT_DISPLAY_NAME: '${XCODEGEN_DISPLAYNAME}/$(TARGET_NAME)'
+        SWIFT_SUPPRESS_WARNINGS: '${XCODEGEN_SILENCE_WARNINGS}'
+        CODE_SIGN_STYLE: 'Automatic'
+        DEVELOPMENT_TEAM: C2346K5398
+        IPHONEOS_DEPLOYMENT_TARGET: '14.0'
+        SWIFT_VERSION: '${XCODEGEN_SWIFT_VERSION}'
+        MARKETING_VERSION: '0.0.1'
+        PRODUCT_BUNDLE_IDENTIFIER: 'com.viktorRezvantsev.$(TARGET_NAME)'
+        INFOPLIST_FILE: '../GithubApp/GithubApp/Sources/Info.plist'
+      configs:
+        Debug:
+          ONLY_ACTIVE_ARCH: 'YES'
+          DEBUG_INFORMATION_FORMAT: 'dwarf'
+          ENABLE_BITCODE: 'NO'
+          OTHER_SWIFT_FLAGS: '$(inherited) -DDebug -D${XCODEGEN_PRODUCT_FLAG} -D${XCODEGEN_DISTRIBUTION_FLAG}'
+          BUNDLE_DISPLAY_NAME: 'GithubApp Dev'
+          # DEVELOPMENT_TEAM: C2346K5398
+        Release:
+          ONLY_ACTIVE_ARCH: 'NO'
+          DEBUG_INFORMATION_FORMAT: 'dwarf-with-dsym'
+          ENABLE_BITCODE: '${XCODE_ENABLE_BITCODE}'
+          OTHER_SWIFT_FLAGS: '$(inherited) -DRelease -D${XCODEGEN_PRODUCT_FLAG} -D${XCODEGEN_DISTRIBUTION_FLAG}'
+          BUNDLE_DISPLAY_NAME: 'GithubApp'  
+    info:
+      path: '../GithubApp/GithubApp/Sources/Info.plist'
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
   FrameworkTarget:
     templates: ['templateCommon']
     type: framework
@@ -41,8 +57,9 @@ targetTemplates:
       base:
         PRODUCT_NAME: '$(TARGET_NAME)'
         PRODUCT_MODULE_NAME: '$(TARGET_NAME)'
-        PRODUCT_BUNDLE_IDENTIFIER: 'com.viktorRezvantsev.framework.$(TARGET_NAME)'
+        PRODUCT_BUNDLE_IDENTIFIER: com.viktorRezvantsev.framework.$(TARGET_NAME)
   AppTarget:
     templates: [templateCommon]
     type: application
     requiresObjCLinking: true
+    # base:

@@ -1,5 +1,8 @@
+name: UIComponents
 targets:
   UIComponents:
     templates: ['FrameworkTarget']
     sources:
-      - path: 'GithubApp/Common'
+      - path: 'GithubApp/Common/UIComponents'
+    info:
+      path: '../GithubApp/GithubApp/Common/UIComponents/Info.plist'
