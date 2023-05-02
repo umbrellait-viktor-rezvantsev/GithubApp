@@ -23,16 +23,16 @@ options:
 settings:
   CURRENT_PROJECT_VERSION: '${XCODEGEN_BUILD_NUMBER}'
 include:
-- path: ../XcodeGen/common.yml
+- path: common.yml
   relativePaths: false
-- path: ../XcodeGen/targets/modules/common/models.yml
+- path: modules/common/models.yml
   relativePaths: false
-- path: ../XcodeGen/targets/modules/common/UIComponents.yml
+- path: modules/common/UIComponents.yml
   relativePaths: false
-- path: ../XcodeGen/targets/modules/core/network.yml
+- path: modules/core/network.yml
   relativePaths: false
-- path: ../XcodeGen/targets/modules/flows/auth.yml
+- path: modules/flows/auth.yml
   relativePaths: false
-- path: ../XcodeGen/targets/modules/Application/Application.yml
+- path: modules/Application/Application.yml
   relativePaths: false
   

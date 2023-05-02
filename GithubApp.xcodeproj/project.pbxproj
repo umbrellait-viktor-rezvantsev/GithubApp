@@ -10,15 +10,13 @@
 		0586DA2EE120675A9BC99A8A /* NetworkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83A61BA65D6EFC7B1FC14 /* NetworkFramework.framework */; };
 		0DCBA2A9F292FBC65A375663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F94B26CBE3D8F201C9433AD /* AppDelegate.swift */; };
 		206262A9DD0B30832948F89E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E46CD25738654DF86877321 /* Info.plist */; };
-		22A1AF6E8DD338C47A28A470 /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66FA41311F0D31DF7B7EF2F /* Authentication.framework */; };
 		3C990A414E5E4E2EB7A74DFE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97143B4359C91BA50337AF70 /* NetworkService.swift */; };
-		528CF3925EA525F39BADBD1D /* Authentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F66FA41311F0D31DF7B7EF2F /* Authentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55633085D73C355734E8C38C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFE732017F4B1DC70565610 /* File.swift */; };
 		72D36957650D9DB3B3696960 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E5140756CD7F88DBA7825E9 /* Info.plist */; };
+		7E1D23917720AB7D032AA3C7 /* Authentication.app in Resources */ = {isa = PBXBuildFile; fileRef = 7C9B08C7D25EF8A2D6DB0271 /* Authentication.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7FA097E29ADCE83C764A5B41 /* NetworkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83A61BA65D6EFC7B1FC14 /* NetworkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FEB1B9E66065544159B3299 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A267DB483B93D5B597B911DF /* SceneDelegate.swift */; };
 		97EAC28CE127FE6D39098D7E /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078825B63FC839E8AE8F2CCD /* BasicTextField.swift */; };
-		A2FEAC724D44215D7B1C59C2 /* GithubApp-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DCC20A57D30487DAD4F58A /* GithubApp-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBF00B38648E4C1B71615DDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F50ADC47BB52A5731999F5 /* Info.plist */; };
 		BEA39AA4429E857068E063CF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 914FF6359FE40F8D17C84693 /* Info.plist */; };
 		D94E151D75F51DA48DD7C3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6A774190642084986EE65E /* ViewController.swift */; };
@@ -51,7 +49,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7FA097E29ADCE83C764A5B41 /* NetworkFramework.framework in Embed Frameworks */,
-				528CF3925EA525F39BADBD1D /* Authentication.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +63,7 @@
 		5F94B26CBE3D8F201C9433AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E46CD25738654DF86877321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		742613E19ADD9D9249FC0F6D /* Application.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9B08C7D25EF8A2D6DB0271 /* Authentication.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Authentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A83A61BA65D6EFC7B1FC14 /* NetworkFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5140756CD7F88DBA7825E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		914FF6359FE40F8D17C84693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 		BEFE732017F4B1DC70565610 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		C1D8E12D664638A435448B24 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DCC20A57D30487DAD4F58A /* GithubApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GithubApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		F66FA41311F0D31DF7B7EF2F /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +82,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0586DA2EE120675A9BC99A8A /* NetworkFramework.framework in Frameworks */,
-				22A1AF6E8DD338C47A28A470 /* Authentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				742613E19ADD9D9249FC0F6D /* Application.app */,
-				F66FA41311F0D31DF7B7EF2F /* Authentication.framework */,
+				7C9B08C7D25EF8A2D6DB0271 /* Authentication.app */,
 				BC9DAD85664F6C739A9E1F08 /* Models.framework */,
 				86A83A61BA65D6EFC7B1FC14 /* NetworkFramework.framework */,
 				C1D8E12D664638A435448B24 /* UIComponents.framework */,
@@ -207,17 +203,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		B7AE886AE3DF0E06F903F38B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2FEAC724D44215D7B1C59C2 /* GithubApp-Bridging-Header.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		0553CA9FEAF6FB7232C32111 /* NetworkFramework */ = {
 			isa = PBXNativeTarget;
@@ -272,6 +257,7 @@
 			buildConfigurationList = 666EFB01EDD27693A2A7F89A /* Build configuration list for PBXNativeTarget "Application" */;
 			buildPhases = (
 				F572C03FEE39677DADEB17E4 /* Sources */,
+				DCBADF22556691BD96F83B58 /* Resources */,
 				C955E310128A22EDF8472A36 /* Frameworks */,
 				F4B985B3C6D1163765499D06 /* Embed Frameworks */,
 			);
@@ -290,7 +276,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64DC7C2C8829768440A73FA2 /* Build configuration list for PBXNativeTarget "Authentication" */;
 			buildPhases = (
-				B7AE886AE3DF0E06F903F38B /* Headers */,
 				C0EF85C3AA0A38CB642EA1E9 /* Sources */,
 				59DE346661C1D0B7BEECF8E5 /* Resources */,
 			);
@@ -300,8 +285,8 @@
 			);
 			name = Authentication;
 			productName = Authentication;
-			productReference = F66FA41311F0D31DF7B7EF2F /* Authentication.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 7C9B08C7D25EF8A2D6DB0271 /* Authentication.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -367,6 +352,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				206262A9DD0B30832948F89E /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBADF22556691BD96F83B58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1D23917720AB7D032AA3C7 /* Authentication.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,19 +583,14 @@
 		6705E669CAFA1B01D75564CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = "GithubApp Dev";
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C2346K5398;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ../Products/Common/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -611,16 +599,12 @@
 				MARKETING_VERSION = 0.0.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDebug -D${XCODEGEN_PRODUCT_FLAG} -D${XCODEGEN_DISTRIBUTION_FLAG}";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.viktorRezvantsev.framework.$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viktorRezvantsev.$(TARGET_NAME)";
 				PRODUCT_DISPLAY_NAME = "${XCODEGEN_DISPLAYNAME}/$(TARGET_NAME)";
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
 				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -822,19 +806,14 @@
 		E47FD6EEF7559AFC65C5C99D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_DISPLAY_NAME = GithubApp;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C2346K5398;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = "${XCODE_ENABLE_BITCODE}";
 				INFOPLIST_FILE = ../Products/Common/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -843,16 +822,12 @@
 				MARKETING_VERSION = 0.0.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DRelease -D${XCODEGEN_PRODUCT_FLAG} -D${XCODEGEN_DISTRIBUTION_FLAG}";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.viktorRezvantsev.framework.$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viktorRezvantsev.$(TARGET_NAME)";
 				PRODUCT_DISPLAY_NAME = "${XCODEGEN_DISPLAYNAME}/$(TARGET_NAME)";
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
 				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

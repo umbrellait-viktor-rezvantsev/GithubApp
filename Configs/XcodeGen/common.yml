@@ -59,6 +59,6 @@ targetTemplates:
         PRODUCT_MODULE_NAME: '$(TARGET_NAME)'
         PRODUCT_BUNDLE_IDENTIFIER: com.viktorRezvantsev.framework.$(TARGET_NAME)
   AppTarget:
-    templates: [templateCommon]
+    templates: ['templateCommon']
     type: application
     requiresObjCLinking: true

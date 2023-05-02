@@ -1,7 +1,7 @@
 name: Authentication
 targets:
   Authentication:
-    templates: ['AppTarget']
+    templates: ['FrameworkTarget']
     # dependencies:
     #   - target: NetworkFramework
     sources:
