@@ -1,0 +1,8 @@
+name: UIComponents
+targets:
+  UIComponents:
+    templates: ['FrameworkTarget']
+    sources:
+      - path: ../../Sources/UIComponents
+    # info:
+    #   path: ../../Sources/UIComponents/Info.plist

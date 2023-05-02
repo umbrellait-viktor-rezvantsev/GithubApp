@@ -1,8 +1,0 @@
-name: Models
-targets:
-  Models:
-    templates: ['FrameworkTarget']
-    sources:
-      - path: '../GithubApp/GithubApp/Common/Models'
-    info:
-      path: '../GithubApp/GithubApp/Common/Models/Info.plist'

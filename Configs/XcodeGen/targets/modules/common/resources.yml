@@ -1,0 +1,5 @@
+targets:
+  Resources:
+    templates: ['FrameworkTarget']
+    sources:
+      - path: '../../Sources/Models'

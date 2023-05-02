@@ -1,0 +1,10 @@
+name: NetworkFramework
+targets:
+  NetworkFramework:
+    templates: ['FrameworkTarget']
+    sources:
+     - path: ../../Sources/Network
+    # dependencies:
+    #   - target: Models
+    # info:
+    #   path: ../../Sources/Network/Info.plist

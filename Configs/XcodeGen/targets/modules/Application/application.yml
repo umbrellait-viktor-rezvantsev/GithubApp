@@ -1,0 +1,11 @@
+targetTemplates:
+  templateApplication:
+    templates: ['AppTarget']
+    sources:
+      - '../../Sources/Application'
+targets:
+  Application:
+    templates: ['templateApplication']
+    dependencies:
+    - target: 'NetworkFramework'
+    - target: 'Authentication'
