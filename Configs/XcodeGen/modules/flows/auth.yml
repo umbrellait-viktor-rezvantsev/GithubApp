@@ -1,0 +1,7 @@
+targets:
+  Authentication:
+    templates: ['FrameworkTarget']
+    # dependencies:
+    #   - target: NetworkFramework
+    sources:
+      - path: '../../Sources/Auth'

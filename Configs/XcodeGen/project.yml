@@ -1,0 +1,37 @@
+name: GithubApp
+fileGroups:
+# - '../../.gitignore'
+# - '../../Documents'
+# - '../../README.md'
+# - '../../LICENSE.md'
+# - '../../Scripts'
+#- '../../Templates'
+# - '../../Configs/Cocoapods/Podfile'
+# - '../../Configs/Cocoapods/Podfile.lock'
+# - '../../Configs/Products'
+# - '../../Configs/XcodeGen'
+options:
+  createIntermediateGroups: true
+  developmentLanguage: 'ru'
+  useBaseInternationalization: false
+  usesTabs: false
+  indentWidth: 4
+  tabWidth: 4
+  xcodeVersion: '5.7'
+  groupSortPosition: top
+  generateEmptyDirectories: true
+settings:
+  CURRENT_PROJECT_VERSION: '${XCODEGEN_BUILD_NUMBER}'
+include:
+- path: common.yml
+  relativePaths: false
+- path: modules/common/models.yml
+  relativePaths: false
+- path: modules/common/UIComponents.yml
+  relativePaths: false
+- path: modules/core/network.yml
+  relativePaths: false
+- path: modules/flows/auth.yml
+  relativePaths: false
+- path: modules/Application/Application.yml
+  relativePaths: false

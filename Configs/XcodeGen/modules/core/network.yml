@@ -1,0 +1,7 @@
+targets:
+  NetworkFramework:
+    templates: ['FrameworkTarget']
+    sources:
+     - path: '../../Sources/Network'
+    # dependencies:
+    #   - target: Models

@@ -1,0 +1,7 @@
+targets:
+  UIComponents:
+    templates: ['FrameworkTarget']
+    dependencies:
+    - target: 'Models'
+    sources:
+      - '../../Sources/UIComponents'
