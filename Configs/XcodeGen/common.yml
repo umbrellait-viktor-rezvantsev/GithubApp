@@ -7,13 +7,13 @@ targetTemplates:
     deploymentTarget: 14.0
     sources:
       - path: '../../Sources'
-        createIntermediateGroups: true
+        createIntermediateGroups: false
         excludes:
-          - '*'
-      # - path: '../../Resources'
-      #   createIntermediateGroups: false
-      #   excludes:
-      #     - '*'
+        - '*'
+      - path: '../../Resources'
+        createIntermediateGroups: false
+        excludes:
+        - '*'
     settings:
       base:
         PRODUCT_DISPLAY_NAME: '${XCODEGEN_DISPLAYNAME}/$(TARGET_NAME)'
@@ -21,7 +21,7 @@ targetTemplates:
         CODE_SIGN_STYLE: 'Automatic'
         DEVELOPMENT_TEAM: C2346K5398
         IPHONEOS_DEPLOYMENT_TARGET: '14.0'
-        SWIFT_VERSION: '${XCODEGEN_SWIFT_VERSION}'
+        SWIFT_VERSION: '5.7'
         MARKETING_VERSION: '0.0.1'
         PRODUCT_BUNDLE_IDENTIFIER: 'com.viktorRezvantsev.$(TARGET_NAME)'
         INFOPLIST_FILE: '../Products/Common/Info.plist'

@@ -17,6 +17,7 @@
 		72D36957650D9DB3B3696960 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E5140756CD7F88DBA7825E9 /* Info.plist */; };
 		7FA097E29ADCE83C764A5B41 /* NetworkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83A61BA65D6EFC7B1FC14 /* NetworkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7FEB1B9E66065544159B3299 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A267DB483B93D5B597B911DF /* SceneDelegate.swift */; };
+		951C10FA9F35651781BF0EED /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9DAD85664F6C739A9E1F08 /* Models.framework */; };
 		97EAC28CE127FE6D39098D7E /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078825B63FC839E8AE8F2CCD /* BasicTextField.swift */; };
 		A2FEAC724D44215D7B1C59C2 /* GithubApp-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DCC20A57D30487DAD4F58A /* GithubApp-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBF00B38648E4C1B71615DDF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55F50ADC47BB52A5731999F5 /* Info.plist */; };
@@ -27,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		065F4B4E26920FF0568FC87F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC4D567D75ACC63DD59FEDDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75A6B07B6CE55CEA1C815577;
+			remoteInfo = Models;
+		};
 		C63ED1F97434D2DE9BE41E4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC4D567D75ACC63DD59FEDDF /* Project object */;
@@ -80,6 +88,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		79156D90A8D921EDFCF1CB98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951C10FA9F35651781BF0EED /* Models.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C955E310128A22EDF8472A36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,6 +113,14 @@
 			children = (
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		06DD592E99A00DC3107F3BCD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = ../../Resources;
 			sourceTree = "<group>";
 		};
 		0C769EB3291A276E6A1F9F1D /* Application */ = {
@@ -123,11 +147,12 @@
 			path = ../../Sources/Auth;
 			sourceTree = "<group>";
 		};
-		2C919579A7DBE98759B88A12 /* Sources */ = {
+		2B7FECB7EBE43B828A799840 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Sources;
+			name = Sources;
+			path = ../../Sources;
 			sourceTree = "<group>";
 		};
 		4079814664E7AE77B2569CDF /* Products */ = {
@@ -152,15 +177,6 @@
 			path = ../../Sources/Network;
 			sourceTree = "<group>";
 		};
-		710404CB91CA9E0967A5AC2D /* GithubApp */ = {
-			isa = PBXGroup;
-			children = (
-				2C919579A7DBE98759B88A12 /* Sources */,
-			);
-			name = GithubApp;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		7206949B69C6B6AC2720F6DC /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,9 +193,10 @@
 			children = (
 				0C769EB3291A276E6A1F9F1D /* Application */,
 				0C7B8198B5A07EAC0695F69A /* Auth */,
-				710404CB91CA9E0967A5AC2D /* GithubApp */,
 				C200A76E1B5B271ED5271D93 /* Models */,
 				5CD1358DF826DF25D4B51FFA /* Network */,
+				06DD592E99A00DC3107F3BCD /* Resources */,
+				2B7FECB7EBE43B828A799840 /* Sources */,
 				7206949B69C6B6AC2720F6DC /* UIComponents */,
 				4079814664E7AE77B2569CDF /* Products */,
 			);
@@ -241,10 +258,12 @@
 			buildPhases = (
 				D6C420C79F11397F3B831981 /* Sources */,
 				EAC551D64FDCCC8F99213445 /* Resources */,
+				79156D90A8D921EDFCF1CB98 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				12B75778FD7B353A143E8DAA /* PBXTargetDependency */,
 			);
 			name = UIComponents;
 			productName = UIComponents;
@@ -435,6 +454,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		12B75778FD7B353A143E8DAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75A6B07B6CE55CEA1C815577 /* Models */;
+			targetProxy = 065F4B4E26920FF0568FC87F /* PBXContainerItemProxy */;
+		};
 		4DB768BA0E7987B52AAD185B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F8F2409082EDAD568840ECE9 /* Authentication */;
@@ -471,7 +495,7 @@
 				PRODUCT_DISPLAY_NAME = "${XCODEGEN_DISPLAYNAME}/$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -507,7 +531,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -544,7 +568,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -581,7 +605,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -618,7 +642,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -655,7 +679,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -692,7 +716,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -785,7 +809,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -814,7 +838,7 @@
 				PRODUCT_DISPLAY_NAME = "${XCODEGEN_DISPLAYNAME}/$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -850,7 +874,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_SUPPRESS_WARNINGS = "${XCODEGEN_SILENCE_WARNINGS}";
-				SWIFT_VERSION = "${XCODEGEN_SWIFT_VERSION}";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};

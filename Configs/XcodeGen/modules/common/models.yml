@@ -1,8 +1,6 @@
-name: Models
+# name: Models
 targets:
   Models:
     templates: ['FrameworkTarget']
     sources:
       - path: ../../Sources/Models
-    # info:
-    #   path: ../../Sources/Models/Info.plist

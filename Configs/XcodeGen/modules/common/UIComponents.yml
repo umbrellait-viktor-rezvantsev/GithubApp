@@ -1,7 +1,9 @@
-name: UIComponents
+# name: UIComponents
 targets:
   UIComponents:
     templates: ['FrameworkTarget']
+    dependencies:
+      - target: 'Models'
     sources:
       - path: ../../Sources/UIComponents
     # info:

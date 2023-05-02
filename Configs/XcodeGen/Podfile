@@ -1,5 +1,6 @@
-project '../../GithubApp.xcodeproj'
-workspace '../../GithubApp.xcworkspace'
+project 'GithubApp.xcodeproj'
+workspace 'GithubApp.xcworkspace'
+
 platform :ios, '14.0'
 
 target 'GithubApp' do
@@ -8,5 +9,6 @@ target 'GithubApp' do
 
   pod 'RxSwift', '6.5.0'
   pod 'Alamofire'
+  pod 'SnapKit'
 
 end

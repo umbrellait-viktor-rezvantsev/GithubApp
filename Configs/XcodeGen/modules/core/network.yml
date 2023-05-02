@@ -1,4 +1,4 @@
-name: NetworkFramework
+# name: NetworkFramework
 targets:
   NetworkFramework:
     templates: ['FrameworkTarget']
