@@ -4,7 +4,7 @@ targetTemplates:
     sources:
       - '../../Sources/Application'
 targets:
-  Application:
+  GithubApp:
     templates: ['templateApplication']
     dependencies:
     - target: 'NetworkFramework'

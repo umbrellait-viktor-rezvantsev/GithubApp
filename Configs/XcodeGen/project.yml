@@ -11,7 +11,7 @@ fileGroups:
 # - '../../Configs/Products'
 # - '../../Configs/XcodeGen'
 options:
-  createIntermediateGroups: false
+  createIntermediateGroups: true
   developmentLanguage: 'ru'
   useBaseInternationalization: false
   usesTabs: false
@@ -35,4 +35,3 @@ include:
   relativePaths: false
 - path: modules/Application/Application.yml
   relativePaths: false
-  

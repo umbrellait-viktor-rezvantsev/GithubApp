@@ -5,6 +5,6 @@ targets:
     dependencies:
       - target: 'Models'
     sources:
-      - path: ../../Sources/UIComponents
+      - path: '../../Sources/UIComponents'
     # info:
     #   path: ../../Sources/UIComponents/Info.plist

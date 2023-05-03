@@ -23,6 +23,7 @@ targetTemplates:
         IPHONEOS_DEPLOYMENT_TARGET: '14.0'
         SWIFT_VERSION: '5.7'
         MARKETING_VERSION: '0.0.1'
+        CURRENT_PROJECT_VERSION: '1'
         PRODUCT_BUNDLE_IDENTIFIER: 'com.viktorRezvantsev.$(TARGET_NAME)'
         INFOPLIST_FILE: '../Products/Common/Info.plist'
       configs:
