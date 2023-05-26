@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,10 @@
 		52FD7EFDBCC4ABEBED604456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1AB392C6506AC624BA8EF /* ViewController.swift */; };
 		7B9851FDB61927F1FFEEBF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCE59AD260DC9B7B492ECA4 /* AppDelegate.swift */; };
 		7FA097E29ADCE83C764A5B41 /* NetworkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86A83A61BA65D6EFC7B1FC14 /* NetworkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		925850F62A02A83400E12026 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925850F52A02A83400E12026 /* AuthorizationViewController.swift */; };
+		925850F72A02A9F900E12026 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925850F52A02A83400E12026 /* AuthorizationViewController.swift */; };
+		925850F82A02AA2C00E12026 /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8725B1F0A888018B0F789144 /* BasicButton.swift */; };
+		925850F92A02AA2F00E12026 /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B52964C4BD5520AB38B547 /* BasicTextField.swift */; };
 		951C10FA9F35651781BF0EED /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9DAD85664F6C739A9E1F08 /* Models.framework */; };
 		BDC467194055355461E25379 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95313A6F10A7E855D26F9E44 /* File.swift */; };
 		C0FB39EFED480742BF35E103 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA2B4047685C4FA21727232 /* NetworkService.swift */; };
@@ -72,6 +76,7 @@
 		841D24915AD490ABD72B9EE5 /* GithubApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GithubApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		86A83A61BA65D6EFC7B1FC14 /* NetworkFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8725B1F0A888018B0F789144 /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
+		925850F52A02A83400E12026 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		92769B07651ADF4BCFB2EFDA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		95313A6F10A7E855D26F9E44 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A923082AA6311D42564E6487 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,7 +124,6 @@
 				095367E7D68E5B286820D26A /* Pods-Application.debug.xcconfig */,
 				FC4B2F78FEA0C93621C09BC1 /* Pods-Application.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,9 +184,39 @@
 		911FE7EFF4D2911AAF867532 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9245245F2A20BE6D00A216D6 /* Core */,
 				1BA2B4047685C4FA21727232 /* NetworkService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		9245245F2A20BE6D00A216D6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		925850F22A02A7E600E12026 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				925850F52A02A83400E12026 /* AuthorizationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		925850F32A02A7F800E12026 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		925850F42A02A7FF00E12026 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		93019CFA1815EBDD1370E54A /* Registration */ = {
@@ -195,6 +229,9 @@
 		9CB514454E9AB1AD9470BE11 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				925850F42A02A7FF00E12026 /* Model */,
+				925850F32A02A7F800E12026 /* ViewModel */,
+				925850F22A02A7E600E12026 /* View */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -450,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925850F72A02A9F900E12026 /* AuthorizationViewController.swift in Sources */,
 				0B5A4F72D0816BF042E6CDE6 /* BasicButton.swift in Sources */,
 				3C11A580957C8A3376D41B77 /* BasicTextField.swift in Sources */,
 			);
@@ -459,8 +497,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925850F62A02A83400E12026 /* AuthorizationViewController.swift in Sources */,
+				925850F82A02AA2C00E12026 /* BasicButton.swift in Sources */,
 				7B9851FDB61927F1FFEEBF9F /* AppDelegate.swift in Sources */,
 				3D1A9EFDD91DCF6A759F014A /* SceneDelegate.swift in Sources */,
+				925850F92A02AA2F00E12026 /* BasicTextField.swift in Sources */,
 				52FD7EFDBCC4ABEBED604456 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
