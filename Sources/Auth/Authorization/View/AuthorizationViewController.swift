@@ -7,8 +7,13 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class AuthorizationViewController: UIViewController {
+    
+    private let viewModel: AuthorizationViewModelProtocol
+    private let disposeBag: DisposeBag = DisposeBag()
     
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -52,6 +57,8 @@ class AuthorizationViewController: UIViewController {
     
     private let passwordTextField: BasicTextField = {
         let textField = BasicTextField(placeholder: "Enter password", borderColor: .systemBlue)
+        textField.isSecureTextEntry = true
+        textField.textContentType = .password
         return textField
     }()
     
@@ -66,19 +73,29 @@ class AuthorizationViewController: UIViewController {
         button.setTitle("Зарегистрироваться", for: .normal)
         return button
     }()
+    
+    required init(viewModel: AuthorizationViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupViews()
         setupConstraints()
+        setupBind()
     }
 
 }
 
 private extension AuthorizationViewController {
 
-    private func setupViews() {
+    func setupViews() {
         view.backgroundColor = .white
         view.addSubview(titleLabel)
         view.addSubview(stackView)
@@ -88,9 +105,11 @@ private extension AuthorizationViewController {
         stackView.addArrangedSubview(buttonsStackView)
         buttonsStackView.addArrangedSubview(submitButton)
         buttonsStackView.addArrangedSubview(registrationButton)
+        
+        submitButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
     }
     
-    private func setupConstraints() {
+    func setupConstraints() {
         let safeArea = view.safeAreaLayoutGuide
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(safeArea.snp.top).offset(16)
@@ -121,5 +140,19 @@ private extension AuthorizationViewController {
             make.width.equalTo(300)
             make.height.equalTo(50)
         }
+    }
+    
+    func setupBind() {
+        registrationButton
+            .rx.tap
+            .subscribe { _ in
+                debugPrint("TAP TAP TAP")
+            }
+            .disposed(by: disposeBag)
+        
+    }
+    
+    @objc func loginButtonPressed() {
+        viewModel.login(username: loginTextField.text ?? "", password: passwordTextField.text ?? "")
     }
 }
